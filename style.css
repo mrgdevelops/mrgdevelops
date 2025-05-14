@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+.navbar-brand {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #3498db !important;
+}
+
+.navbar-nav .nav-link {
+    color: #333 !important;
+    padding: 0.8rem 1.2rem;
+    margin-left: 0.5rem;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3498db !important;
+}
+
+.navbar-nav .nav-link.animated-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #3498db;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link.animated-link:hover::before {
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+section h2 {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section h2::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 50px;
+    height: 2px;
+    background-color: #3498db;
+    transform: translateX(-50%);
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+        margin-left: 0;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+}
+
+@media (max-width: 767.98px) {
+    h2 {
+        font-size: 2em;
+    }
+}
